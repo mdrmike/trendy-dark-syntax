@@ -1,5 +1,18 @@
 @import "syntax-variables";
 
+.scrollbars-visible-always {
+  .editor {
+    ::-webkit-scrollbar-track,
+    ::-webkit-scrollbar-corner {
+      background: @editor-scrollbar-background-color;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: @editor-scrollbar-color;
+    }
+  }
+}
+
 .editor-colors {
   background-color: @syntax-background-color;
   color: @syntax-text-color;
